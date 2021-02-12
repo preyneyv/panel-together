@@ -1,0 +1,107 @@
+.InitializePrompt {
+    // background: #a8ff78;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to top right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        overflow: hidden;
+        width: calc(100vw - 64px);
+        max-width: 320px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 5px 32px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        background: linear-gradient(to top right, #78ffd7, #a8ff78);
+        padding: 16px;
+        color: white;
+        padding-bottom: 30px;
+        clip-path: ellipse(80% 50% at 50% 40%);
+
+
+        h1 {
+            margin: 0;
+            font-family: 'Lobster', sans-serif;
+            text-align: center;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+    }
+
+    .body {
+        padding: 16px;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    input[type=text] {
+        display: block;
+        border: 2px solid rgba(0,0,0,0.15);
+        font: inherit;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 8px;
+        font-size: 16px;
+        border-radius: 6px;
+        outline: none;
+
+
+        &:focus {
+            border-color: #a8ff78;
+        }
+    }
+
+    .radio {
+        margin-top: 16px;
+        display: grid;
+        grid-auto-columns: 1fr;
+        font-size: 16px;
+        grid-auto-flow: column;
+
+        div {
+            border-top: 2px solid rgba(0,0,0,0.15);
+            border-bottom: 2px solid rgba(0,0,0,0.15);
+            box-sizing: border-box;
+            text-align: center;
+            padding: 12px 0;
+
+            &:first-child {
+                border-bottom-left-radius: 6px;
+                border-top-left-radius: 6px;
+                border-left: 2px solid rgba(0,0,0,0.15);
+            }
+
+            &:last-child {
+                border-bottom-right-radius: 6px;
+                border-top-right-radius: 6px;
+                border-right: 2px solid rgba(0,0,0,0.15);
+            }
+
+            &.selected {
+                border-color: transparent;
+                background: linear-gradient(to top right, #78ffd7, #a8ff78);
+                // background-attachment: fixed;
+            }
+        }
+    }
+
+    input[type=submit] {
+        margin-top: 24px;
+        display: block;
+        font: inherit;
+        font-size: 16px;
+        border: 0;
+        
+        background: linear-gradient(to top right, #78ffd7, #a8ff78);
+        width: 100%;
+        padding: 12px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+}

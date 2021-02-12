@@ -1,0 +1,36 @@
+.RadioButton {
+    margin-top: 16px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    font-size: 16px;
+    grid-auto-flow: column;
+
+    div {
+        border-top: 2px solid rgba(0,0,0,0.15);
+        border-bottom: 2px solid rgba(0,0,0,0.15);
+        box-sizing: border-box;
+        text-align: center;
+        padding: 12px 0;
+
+        &:nth-child(2n + 1) {
+            background: #f3f3f3;
+        }
+        &:first-child {
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+            border-left: 2px solid rgba(0,0,0,0.15);
+        }
+
+        &:last-child {
+            border-bottom-right-radius: 6px;
+            border-top-right-radius: 6px;
+            border-right: 2px solid rgba(0,0,0,0.15);
+        }
+
+        &.selected {
+            border-color: transparent;
+            background: linear-gradient(to top right, #78ffd7, #a8ff78);
+            // background-attachment: fixed;
+        }
+    }
+}
