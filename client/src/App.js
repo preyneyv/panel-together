@@ -9,7 +9,6 @@ class App extends React.Component {
         self: {
             id: null,
             name: null,
-            // name: 'Pranav',
             raisedHand: false,
             goFaster: false,
             isModerator: false

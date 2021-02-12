@@ -18,7 +18,6 @@ app.use(express.static(path.join(__dirname, 'client', 'build')))
 const users = new Set;
 
 io.on('connect', socket => {
-    console.log(users)
     const user = {
         id: socket.id,
         name: null,
